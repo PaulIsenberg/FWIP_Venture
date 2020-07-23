@@ -1,0 +1,7 @@
+wshih
+AWSAccessKeyId = AKIAJKAPOQOX75NZT6VQ
+AWSSecretKey = 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
+
+boto3user
+AWSAccessKeyId = AKIAWSPYPQQJ5ELECEW7
+AWSSecretKey = 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
