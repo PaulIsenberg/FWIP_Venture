@@ -4,10 +4,10 @@ UCB Group Project for FWIP
 
 ## Team members are
 
-Winston Shih            X
-Fahima Muthuvappa       Circle
-Irina Tilak             Triangle
-Paul Isenberg           Square
+<p>Winston Shih</p>
+<p>Fahima Muthuvappa</p>
+<p>Irina Tilak</p>
+<p>Paul Isenberg</p>
 
 ## Communication Protocol 
 
