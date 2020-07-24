@@ -4,7 +4,7 @@ UCB Group Project for FWIP
 
 ## Team members are
 
-Winston Shih
-Fahima Farha
-Irina Tilak
-Paul Isenberg
+<p>Winston Shih</p>
+<p>Fahima Farha</p>
+<p>Irina Tilak</p>
+<p>Paul Isenberg</p>
