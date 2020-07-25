@@ -1,4 +1,5 @@
-hawaii.sqlite
+config.py
+/.ipynb_checkpoints
 
 
 # Byte-compiled / optimized / DLL files
