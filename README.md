@@ -21,39 +21,38 @@ Our primary mode of communication is through our Slack group. Through Slack we d
 After some extensive searches through Kaggle, we settled on Startup Investments data. The majority of the team has a background in finance and the dataset piqued our interest. Also, after this course the majority of us want to pursue a career and this might steer us in the direction of what types of companies to join or avoid. In addition, we felt that we could apply machine learning technologies after cleaning and merging the data. The csv’s each have at least one primary key that should allow us to combine the datasets for when we start preprocessing.  
 We selected it because we can apply machine learning technologies, cleaned merged, applied, job hunt-what companies to avoid
 
-<p>Description of Source Data </p>
-<p>11 csv’s </p>
-<p>CSV’s contain </p>
-<p>Acquisitions </p>
-<p>IPO’s </p>
-<p>Degree level of individuals in startup world </p>
-<p>Funding </p>
-<p>Location </p>
-<p>Primary Keys </p>
+<p>Description of Source Data</p>
+- 11 csv’s
+- CSV’s contain
+- Acquisitions
+- IPO’s
+- Degree level of individuals in startup world
+- Funding 
+- Location
+- Primary Keys
 
 The dependencies we’ll be using to directly connect to the S3 bucket are boto3, s3fs, and awscli.
 
 <p>Technologies WE plan to Use</p>
-
-<p>AWS S3</p>
-<p>GitHub</p>
-<p>Jupyter Notebook or Google Colab</p>
-<p>PostgreSQL/pgAdmin4</p>
-<p>Supervised Machine Learning</p>
-<p>Neural Networking</p>
-<p>Tableau</p>
-<p>Leaflet</p>
-<p>Slack/Zoom</p>
+- AWS S3
+- GitHub
+- Jupyter Notebook or Google Colab
+- PostgreSQL/pgAdmin4
+- Supervised Machine Learning
+- Neural Networking
+- Tableau
+- Leaflet
+- Slack/Zoom
 
 <p>Questions We Hope to Answer</p>
 <p>With machine learning techniques we would want to know:</p>
-<p>What attributes lead to a startup failure?</p>
-<p>With analysis and visualization we would like to find out:</p>
-<p>What does it take to not be a failure? Any correlation with:</p>
-    <p>How much time</p>
-    <p>Education level</p>
-    <p>Location</p>
-    <p>Industry</p>
-    <p>ROI for investors</p>
-    <p>Investments vs Valuation</p>
-<p>We hope to use machine learning to answer these questions</p>
+<n>What attributes lead to a startup failure?</n>
+<n>With analysis and visualization we would like to find out:</n>
+<n>What does it take to not be a failure? Any correlation with:</n>
+    - How much time
+    - Education level
+    - Location
+    - Industry
+    - ROI for investors
+    - Investments vs Valuation
+<n>We hope to use machine learning to answer these questions</n> 
