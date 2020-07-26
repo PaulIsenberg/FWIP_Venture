@@ -54,3 +54,7 @@ The dependencies we’ll be using to directly connect to the S3 bucket are boto3
 - ROI for investors
 - Investments vs Valuation
 We hope to use machine learning to answer these questions
+
+#### Assumptions:
+- We are not assuming any any correlation between factors beforehand and will let ML tells us what factors are significant
+- We are assuming that there will be sufficient data for the timeframe specified but will likely employ a sampling process on certain factors
