@@ -1,7 +1,6 @@
-config.py
-/.ipynb_checkpoints
+hawaii.sqlite
 aws.txt
-
+*.gz
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
