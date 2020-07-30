@@ -12,18 +12,18 @@ CREATE TABLE objects(
 	city VARCHAR,
 	region VARCHAR,
 	first_investment_at DATE,
-	last_investment_at,
+	last_investment_at DATE,
 	investment_rounds INT,
 	invested_companies INT,
-	first_funding_at,
-	last_funding_at,
+	first_funding_at DATE,
+	last_funding_at DATE,
 	funding_rounds INT,
 	funding_total_usd FLOAT,
-	first_milestone_at,
-	last_milestone_at,
+	first_milestone_at DATE,
+	last_milestone_at DATE,
 	milestone INT,
 	relationships INT,
-PRIMARY KEY (object_id)
+PRIMARY KEY (object_id),
 UNIQUE (object_id)
 );	
 	
@@ -56,7 +56,7 @@ CREATE TABLE milestones(
 	object_id VARCHAR NOT NULL,
 	milestone_at DATE,
 	milestone_code VARCHAR,
-FOREIGN KEY REFERENCES objects(object_id)
+FOREIGN KEY (object_id) REFERENCES objects(object_id)
 );
 
 CREATE TABLE people(
@@ -76,7 +76,7 @@ CREATE TABLE degrees(
 FOREIGN KEY (object_id) REFERENCES objects(object_id)
 );
 
-CREATE TABLES funding_rounds(
+CREATE TABLE funding_rounds(
 	funding_round_id INT NOT NULL,
 	object_id VARCHAR NOT NULL,
 	funded_at DATE,
@@ -93,10 +93,10 @@ CREATE TABLES funding_rounds(
 	participants INT,
 	is_first_round BOOLEAN,
 	is_last_round BOOLEAN,
-FOREIGN KEY REFERENCES objects(object_id)
+FOREIGN KEY (object_id) REFERENCES objects(object_id)
 );
 
-CREATE TABLES funds(
+CREATE TABLE funds(
 	object_id VARCHAR NOT NULL,
 	name VARCHAR NOT NULL,
 	funded_at DATE,
@@ -105,7 +105,7 @@ CREATE TABLES funds(
 FOREIGN KEY (object_id) REFERENCES objects(object_id)
 );
 
-CREATE TABLES relationships(
+CREATE TABLE relationships(
 	person_object_id VARCHAR NOT NULL,
 	relationship_object_id VARCHAR,
 	start_at DATE,
@@ -116,7 +116,7 @@ CREATE TABLES relationships(
 FOREIGN KEY (person_object_id) REFERENCES objects(object_id)
 );
 
-CREATE TABLES investments(
+CREATE TABLE investments(
 	funding_round_id INT NOT NULL,
 	funded_object_id VARCHAR NOT NULL,
 	investor_object_id VARCAR NOT NULL,
@@ -124,7 +124,7 @@ FOREIGN KEY (funded_object_id) REFERENCES objects(object_id),
 FOREIGN KEY (investor_object_id) REFERENCES objects(object_id)
 );
 
-CREATE TABLES acquisitions(
+CREATE TABLE acquisitions(
 	acquiring_object_id VARCHAR NOT NULL,
 	acquired_object_id  VARCHAR NOT NULL,
 	term_code VARCHAR,
