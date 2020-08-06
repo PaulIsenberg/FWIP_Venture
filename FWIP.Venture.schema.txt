@@ -1,0 +1,125 @@
+objects
+-
+object_id varchar pk
+entity_type varchar
+parent_id varchar
+name varchar
+category_code varchar
+status varchar
+founded_at date
+closed_at date
+country_code varchar
+state_code varchar
+city varchar
+region varchar
+first_investment_at date
+last_investment_at date
+investment_rounds int
+invested_companies int
+first_funding_at date
+last_funding_at date
+funding_rounds int
+funding_total_usd float
+first_milestone_at date
+last_milestone_at date
+milestone int
+relationships int
+
+milestones
+-
+object_id varchar pk
+milestone_at date
+milestone_code varchar
+description varchar
+
+ipos
+-
+object_id varchar pk
+valuation_amount float
+valuation_currency_code varchar
+raised_amount float
+raised_currency_code varchar
+public_at date
+stock_symbol varchar
+
+investments 
+-
+funding_round_id varchar
+funded_object_id varchar pk
+investor_object_id varchar
+
+relationships
+-
+person_object_id varchar
+relationship_object_id varchar
+start_at date
+end_at date
+is_past boolean
+sequence int
+title varchar
+
+people
+-
+object_id varchar pk
+first_name varchar
+last_name varchar
+affiliation_name varchar
+
+offices
+-
+object_id varchar pk
+description varchar
+region varchar
+address1 varchar
+address2 varchar
+city varchar
+zip_code int
+state_code varchar
+country_code varchar
+latitiude float
+longitude float
+
+degrees
+-
+object_id varchar pk
+degree_type varchar
+subject varchar
+institution varchar 
+graduated_at date
+
+funds 
+-
+object_id varchar pk
+name varchar
+funded_at date
+raised_amount float
+raised_currency_code varchar
+
+funding_rounds
+-
+funding_round_id int
+object_id varchar pk
+funded_at date
+funding_round_type varchar
+funding_round_code varchar
+raised_amount_usd float
+raised_amount float
+raised_currency_code varchar
+pre_money_valuation_usd float
+pre_money_valuation float
+pre_money_currency_code varchar
+post_money_valuation_usd float
+post_money_currency_code varchar
+participants int
+is_first_round boolean
+is_last_round boolean
+
+acquititions
+-
+acquiring_object_id varchar
+acquired_object_id varchar
+term_code varchar
+price_amount float
+price_currency_code varchar
+acquired_at date
+
