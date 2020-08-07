@@ -2,6 +2,8 @@ hawaii.sqlite
 aws.txt
 *.gz
 /Resources
+.csv
+config.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
