@@ -137,13 +137,13 @@ FOREIGN KEY (investor_object_id) REFERENCES objects(object_id)
 
 CREATE TABLE acquisitions(
 	index INT NOT NULL,
-	object_id VARCHAR,
-	object_id  VARCHAR,
+	acquiring_object_id VARCHAR,
+	acquired_object_id  VARCHAR,
 	term_code VARCHAR,
 	price_amount FLOAT,
 	price_currency_code VARCHAR,
 	acquired_at DATE,
-FOREIGN KEY (object_id) REFERENCES objects(object_id),
-FOREIGN KEY (object_id) REFERENCES objects(object_id)
+FOREIGN KEY (acquiring_object_id) REFERENCES objects(object_id),
+FOREIGN KEY (acquired_object_id) REFERENCES objects(object_id)
 );
 
