@@ -2,7 +2,8 @@ hawaii.sqlite
 aws.txt
 *.gz
 /Resources
-*.csv
+loc_sorted.csv
+test.csv
 config.py
 
 # Byte-compiled / optimized / DLL files
