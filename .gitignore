@@ -3,7 +3,7 @@ aws.txt
 *.gz
 /Resources
 /latlngs
-/Completed_latlngs
+/geocodio
 loc_sorted.csv
 test.csv
 config.py
