@@ -3,6 +3,7 @@ aws.txt
 *.gz
 /Resources
 /latlngs
+/Completed_latlngs
 loc_sorted.csv
 test.csv
 config.py
