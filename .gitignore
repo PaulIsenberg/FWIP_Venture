@@ -2,6 +2,7 @@ hawaii.sqlite
 aws.txt
 *.gz
 /Resources
+/latlngs
 loc_sorted.csv
 test.csv
 config.py
