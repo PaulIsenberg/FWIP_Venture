@@ -710,10 +710,12 @@
         <_.fcp.ObjectModelEncapsulateLegacy.true...relation type='collection'>
           <relation connection='postgres.0l0hmwa14r6kj612hjod31xa3ka4' name='objects' table='[public].[objects]' type='table' />
           <relation connection='postgres.0l0hmwa14r6kj612hjod31xa3ka4' name='offices' table='[public].[offices]' type='table' />
+          <relation connection='postgres.0l0hmwa14r6kj612hjod31xa3ka4' name='people' table='[public].[people]' type='table' />
         </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
         <cols>
           <map key='[address1]' value='[offices].[address1]' />
           <map key='[address2]' value='[offices].[address2]' />
+          <map key='[affiliation_name]' value='[people].[affiliation_name]' />
           <map key='[category_code]' value='[objects].[category_code]' />
           <map key='[city (offices)]' value='[offices].[city]' />
           <map key='[city]' value='[objects].[city]' />
@@ -724,21 +726,25 @@
           <map key='[first_funding_at]' value='[objects].[first_funding_at]' />
           <map key='[first_investment_at]' value='[objects].[first_investment_at]' />
           <map key='[first_milestone_at]' value='[objects].[first_milestone_at]' />
+          <map key='[first_name]' value='[people].[first_name]' />
           <map key='[founded_at]' value='[objects].[founded_at]' />
           <map key='[funding_rounds]' value='[objects].[funding_rounds]' />
           <map key='[funding_total_usd]' value='[objects].[funding_total_usd]' />
           <map key='[index (offices)]' value='[offices].[index]' />
+          <map key='[index (people)]' value='[people].[index]' />
           <map key='[index]' value='[objects].[index]' />
           <map key='[invested_companies]' value='[objects].[invested_companies]' />
           <map key='[investment_rounds]' value='[objects].[investment_rounds]' />
           <map key='[last_funding_at]' value='[objects].[last_funding_at]' />
           <map key='[last_investment_at]' value='[objects].[last_investment_at]' />
           <map key='[last_milestone_at]' value='[objects].[last_milestone_at]' />
+          <map key='[last_name]' value='[people].[last_name]' />
           <map key='[latitude]' value='[offices].[latitude]' />
           <map key='[longitude]' value='[offices].[longitude]' />
           <map key='[milestone]' value='[objects].[milestone]' />
           <map key='[name]' value='[objects].[name]' />
           <map key='[object_id (offices)]' value='[offices].[object_id]' />
+          <map key='[object_id (people)]' value='[people].[object_id]' />
           <map key='[object_id]' value='[objects].[object_id]' />
           <map key='[parent_id]' value='[objects].[parent_id]' />
           <map key='[region (offices)]' value='[offices].[region]' />
@@ -1394,13 +1400,108 @@
             </attributes>
             <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[offices_EF29C827B38C432583C33E423458D333]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
           </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>index</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[index (people)]</local-name>
+            <parent-name>[people]</parent-name>
+            <remote-alias>index</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_INTEGER&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_SLONG&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[people_93A1DC25C1804111B0E70CE0BD9D0BD6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>object_id</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[object_id (people)]</local-name>
+            <parent-name>[people]</parent-name>
+            <remote-alias>object_id</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>false</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[people_93A1DC25C1804111B0E70CE0BD9D0BD6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>first_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[first_name]</local-name>
+            <parent-name>[people]</parent-name>
+            <remote-alias>first_name</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[people_93A1DC25C1804111B0E70CE0BD9D0BD6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>last_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[last_name]</local-name>
+            <parent-name>[people]</parent-name>
+            <remote-alias>last_name</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[people_93A1DC25C1804111B0E70CE0BD9D0BD6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>affiliation_name</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[affiliation_name]</local-name>
+            <parent-name>[people]</parent-name>
+            <remote-alias>affiliation_name</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>255</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[people_93A1DC25C1804111B0E70CE0BD9D0BD6]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
         </metadata-records>
       </connection>
       <aliases enabled='yes' />
       <_.fcp.ObjectModelTableType.true...column caption='objects' datatype='table' name='[__tableau_internal_object_id__].[objects_06CE422D6E744F708DCE099143044E8E]' role='measure' type='quantitative' />
       <_.fcp.ObjectModelTableType.true...column caption='offices' datatype='table' name='[__tableau_internal_object_id__].[offices_EF29C827B38C432583C33E423458D333]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='people' datatype='table' name='[__tableau_internal_object_id__].[people_93A1DC25C1804111B0E70CE0BD9D0BD6]' role='measure' type='quantitative' />
       <column caption='Address1' datatype='string' name='[address1]' role='dimension' type='nominal' />
       <column caption='Address2' datatype='string' name='[address2]' role='dimension' type='nominal' />
+      <column caption='Affiliation Name' datatype='string' name='[affiliation_name]' role='dimension' type='nominal' />
       <column caption='Category Code' datatype='string' name='[category_code]' role='dimension' type='nominal' />
       <column caption='City (Offices)' datatype='string' name='[city (offices)]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
       <column caption='City' datatype='string' name='[city]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
@@ -1411,21 +1512,25 @@
       <column caption='First Funding At' datatype='date' name='[first_funding_at]' role='dimension' type='ordinal' />
       <column caption='First Investment At' datatype='date' name='[first_investment_at]' role='dimension' type='ordinal' />
       <column caption='First Milestone At' datatype='date' name='[first_milestone_at]' role='dimension' type='ordinal' />
+      <column caption='First Name' datatype='string' name='[first_name]' role='dimension' type='nominal' />
       <column caption='Founded At' datatype='date' name='[founded_at]' role='dimension' type='ordinal' />
       <column caption='Funding Rounds' datatype='integer' name='[funding_rounds]' role='measure' type='quantitative' />
       <column caption='Funding Total Usd' datatype='real' name='[funding_total_usd]' role='measure' type='quantitative' />
       <column caption='Index (Offices)' datatype='integer' name='[index (offices)]' role='measure' type='quantitative' />
+      <column caption='Index (People)' datatype='integer' name='[index (people)]' role='measure' type='quantitative' />
       <column caption='Index' datatype='integer' name='[index]' role='measure' type='quantitative' />
       <column caption='Invested Companies' datatype='integer' name='[invested_companies]' role='measure' type='quantitative' />
       <column caption='Investment Rounds' datatype='integer' name='[investment_rounds]' role='measure' type='quantitative' />
       <column caption='Last Funding At' datatype='date' name='[last_funding_at]' role='dimension' type='ordinal' />
       <column caption='Last Investment At' datatype='date' name='[last_investment_at]' role='dimension' type='ordinal' />
       <column caption='Last Milestone At' datatype='date' name='[last_milestone_at]' role='dimension' type='ordinal' />
+      <column caption='Last Name' datatype='string' name='[last_name]' role='dimension' type='nominal' />
       <column caption='Latitude' datatype='string' name='[latitude]' role='dimension' type='nominal' />
       <column caption='Longitude' datatype='string' name='[longitude]' role='dimension' type='nominal' />
       <column caption='Milestone' datatype='integer' name='[milestone]' role='measure' type='quantitative' />
       <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
       <column caption='Object Id (Offices)' datatype='string' name='[object_id (offices)]' role='dimension' type='nominal' />
+      <column caption='Object Id (People)' datatype='string' name='[object_id (people)]' role='dimension' type='nominal' />
       <column caption='Object Id' datatype='string' name='[object_id]' role='dimension' type='nominal' />
       <column caption='Parent Id' datatype='string' name='[parent_id]' role='dimension' type='nominal' />
       <column caption='Region (Offices)' datatype='string' name='[region (offices)]' role='dimension' type='nominal' />
@@ -1458,6 +1563,11 @@
               <relation connection='postgres.0l0hmwa14r6kj612hjod31xa3ka4' name='offices' table='[public].[offices]' type='table' />
             </properties>
           </object>
+          <object caption='people' id='people_93A1DC25C1804111B0E70CE0BD9D0BD6'>
+            <properties context=''>
+              <relation connection='postgres.0l0hmwa14r6kj612hjod31xa3ka4' name='people' table='[public].[people]' type='table' />
+            </properties>
+          </object>
         </objects>
         <relationships>
           <relationship>
@@ -1467,6 +1577,14 @@
             </expression>
             <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='objects_06CE422D6E744F708DCE099143044E8E' unique-key='true' />
             <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-guaranteed-value='true' guaranteed-value='true' object-id='offices_EF29C827B38C432583C33E423458D333' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[object_id]' />
+              <expression op='[object_id (people)]' />
+            </expression>
+            <first-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-unique-key='true' object-id='objects_06CE422D6E744F708DCE099143044E8E' unique-key='true' />
+            <second-end-point _.fcp.ObjectModelRelationshipPerfOptions.true...is-db-set-guaranteed-value='true' guaranteed-value='true' object-id='people_93A1DC25C1804111B0E70CE0BD9D0BD6' />
           </relationship>
         </relationships>
       </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
