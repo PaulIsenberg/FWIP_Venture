@@ -19,4 +19,17 @@ INNER JOIN objects as obj
 	ON (obj.object_id = ofc.object_id)
 	WHERE ofc.country_code = 'USA';
 	
-SELECT * FROM locations
+SELECT * FROM people
+
+SELECT 	ppl.object_id,
+		ppl.first_name,
+		ppl.last_name,
+		deg.degree_type,
+		deg.subject,
+		deg.institution,
+		deg.graduated_at
+INTO ppldeg
+FROM degrees as deg
+INNER JOIN people as ppl
+	ON (deg.object_id = ppl.object_id)
+	WHERE deg.degree_type is not NULL;
