@@ -1,4 +1,4 @@
-objects
+objects.csv
 -
 object_id varchar pk
 entity_type varchar
