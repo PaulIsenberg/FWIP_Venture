@@ -1,12 +1,3 @@
-hawaii.sqlite
-aws.txt
-*.gz
-/Resources
-/latlngs
-/geocodio
-loc_sorted.csv
-test.csv
-config.py
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -102,8 +93,6 @@ ipython_config.py
 #Pipfile.lock
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
-aws.txt
-config.py
 
 __pypackages__/
 
