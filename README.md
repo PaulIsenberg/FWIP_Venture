@@ -8,10 +8,7 @@ UCB Group Project for FWIP
 - Irina Tilak
 - Paul Isenberg
 
-## Communication Protocol 
-
-Our primary mode of communication is through our Slack group. Through Slack we discuss a good time for all of us to meet over Zoom. Generally we meet about once a day to once very two days. Our Zoom meetings last about an hour to an hour and a half depending on what tasks need to be completed. Through Zoom we were able to establish each person's role on the team. In addition, we have a shared Google Doc where we jot down any notes we have for the project, for each other, and any notes we may have received from the instructors and TA's.
-
+## [Presentation Link](https://docs.google.com/presentation/d/1Vjvu8A7ygvP2FZ9kXaumQY_xwxbs96nj2aUIT22SuJE/edit#slide=id.g8e5f029eda_0_7)
 
 ## Presentation Outline
 
@@ -53,11 +50,17 @@ With analysis and visualization we would like to find out:
     - Industry
  - ROI for investors
     - Investments vs Valuation
-
+Our dataset has four statuses:
+ - Acquired
+ - Operating
+ - IPO
+ - Closed
+Our target features are aquired and operating.
 #### Visualizations with Tableau
 
 1.  Geography:
      - Bubble map by mega-region
+     - [Tableau Link](https://public.tableau.com/profile/paul.isenberg#!/vizhome/Interactive_15976252803120/Dashboard1)
 2.  Financial:
      - Bar chart: Investment Rounds by Funding $ Amount
 3.  Time
@@ -92,6 +95,10 @@ Our first ML tested for acquisitions, isolating startups with an ‘acquired’ 
 4. Total rounds of funding
 5. Total number of participants over all rounds of funding.
 
+
+It is important to note that multiple different ML models were used before we decided on Logistic Regression. Random Forest, SVM and Neural Networking did not give us any better results. We hoped that Backward Elimination would improve the Machine Learning performance but it did not.
+
+
 **Model Choice:** Logistic Regression
 
 
@@ -102,9 +109,5 @@ Our first ML tested for acquisitions, isolating startups with an ‘acquired’ 
 
 
 **Progress:** We will continue to explore into Neural Networks and explore further modeling.
-
-
-
-
 
 
