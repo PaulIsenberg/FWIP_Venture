@@ -7,6 +7,8 @@ ETL_Winston_copy_transformation.ipynb
 NEW_applying_ML_submit.ipynb
 StartUps_project - Winston test.ipynb
 StartUps_project_mockup_ML_fixed.ipynb
+*.xlsx
+
 
 Boto3Test.ipynb
 compiling.ipynb
