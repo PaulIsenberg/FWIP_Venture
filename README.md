@@ -66,7 +66,6 @@ Our target features are aquired and operating.
 
 1.  Geography:
      - Bubble map by mega-region
-     - [Tableau Link](https://public.tableau.com/profile/paul.isenberg#!/vizhome/Interactive_15976252803120/Dashboard1)
 2.  Financial:
      - Bar chart: Investment Rounds by Funding $ Amount
 3.  Time
