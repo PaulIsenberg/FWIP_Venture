@@ -2,13 +2,15 @@
 
 UCB Group Project for FWIP
 
-## Team members are
-- Winston Shih
+## Team members 
 - Fahima Muthuvappa
+- Winston Shih
 - Irina Tilak
 - Paul Isenberg
 
-## [Presentation Link](https://docs.google.com/presentation/d/1Vjvu8A7ygvP2FZ9kXaumQY_xwxbs96nj2aUIT22SuJE/edit#slide=id.g8e5f029eda_0_7)
+## [Final Presentation Link](https://docs.google.com/presentation/d/1PDeXMa6CsmYeHFzxoZXlzYagbCNiZJHR1r3bMCuof-s/edit?usp=sharing)
+
+## [Presentation Link With Notes](https://docs.google.com/presentation/d/1Vjvu8A7ygvP2FZ9kXaumQY_xwxbs96nj2aUIT22SuJE/edit#slide=id.g8e5f029eda_0_7)
 
 ## Presentation Outline
 
@@ -56,20 +58,20 @@ Our dataset has four statuses:
  - IPO
  - Closed
 Our target features are aquired and operating.
-#### Visualizations with Tableau
+
+#### Visualizations 
 
 1.  Geography:
      - Bubble map by mega-region
-     - [Tableau Link](https://public.tableau.com/profile/paul.isenberg#!/vizhome/Interactive_15976252803120/Dashboard1)
 2.  Financial:
      - Bar chart: Investment Rounds by Funding $ Amount
 3.  Time
      - A temporal measure of how long companies remained operating (0-6 months, 7-12 months, 1-2 years, 3-5 years, 5+ years)
 4. Interactive (map)
      - By Zip Code, hover will display company names
+     - [Tableau Link](https://public.tableau.com/profile/paul.isenberg#!/vizhome/Interactive_15976252803120/Dashboard1)
 5. Best location to launch a startup
-     - Reason 1 
-     - Reason 2
+     - [Tableau Link](https://public.tableau.com/profile/irina.tilak#!/vizhome/Book1_15978744576230/Story1?publish=yes)
 6. Success rate by degree
 7. Prediction
      - Training, testing sets plot as a line chart for best model
@@ -105,10 +107,15 @@ It is important to note that multiple different ML models were used before we de
 **Limitation:** Potentially oversimplified and tends to not do well with binary data, and more prone to overfit in high dimensional dataset. 
 
 
-**Benefits:** Simplified, memory efficient, 0.977 accuracy (vs DL, SVM, RF 0.96 accuracy)
+**Benefits:** Simplified, memory efficient, 91% accuracy, 28% precision 
 
 
-**Progress:** We will continue to explore into Neural Networks and explore further modeling.
+**Results and Conclusion:** We came to the conclusion that our dataset is not suitable for Machine Learning prediction. 
+Machine Learning works like the human brain, just faster. It is quite hard for experts to determine if there  Which is why we were unable to produce results with higher accuracy. 
+
+Some things we can look into if we were to further our investigation include what type of product was in demand and why. For example, why is there a greater success rate in startups that focus on software as opposed to startups that focus on the news or hardware. Were there any economic events, such as the dotcom bubble or the recession of 08-09 that impacted the companies? And finally, some things that can not be quantified by machine learning that definitely influence the success of a company are the people. We have information on the C-level employees but who else on the team was a driving force for the startup? Who was great at networking or was a veteran to the startup world and knew how to work the market in their favor? Until there is a way to catergorize or encode these softskills, it will be difficult to predict the success of a startup via Machine Learning. 
+
+
 
 
 
