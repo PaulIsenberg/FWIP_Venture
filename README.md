@@ -64,7 +64,7 @@ Our target (success) - acquired + ipo. We think that it is the most desirable ou
 
 We ploted all US startups on a map:
 
-![](images/Capture_3.jpg)
+![StartUps map](images/Capture_3.PNG)
 
 
 #### Visualizations 
