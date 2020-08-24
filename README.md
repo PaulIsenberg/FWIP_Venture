@@ -46,21 +46,22 @@ After some extensive searches through Kaggle, we settled on Startup Investments 
 
 With machine learning techniques we would want to know what attributes lead to a startup success?
 Are there any correlations with:
-    - Age of Startup
-    - Education level
-    - Location
-    - Market segment
-    - Start year
-    - Funding rounds
-    - Investments vs Valuation
+- Age of Startup
+- Education level
+- Location
+- Market segment
+- Start year
+- Funding rounds
+- Investments vs Valuation
+    
 Our dataset has four statuses/outcomes:
-    - Acquired
-    - Operating
-    - IPO
-    - Closed
+- Acquired
+- Operating
+- IPO
+- Closed
 
-##### Defining Success
-Of our outcomes, we believe the most desirable outcome for startups are 'acquired' and 'IPO', however we also know that operating companies can be equaly successful but not willing to go public or to be acquired. We believe that the successful companies with the 'operating' status are the minority and most of startups would want to reach the goal of being acquired or going public. Thus, we defined aquired and ipo as indicators of success.
+#### Defining Success
+We believe the most desirable outcome for startups are 'acquired' and 'IPO', however we also know that operating companies can be equaly successful but not willing to go public or to be acquired. We believe that the successful companies with the 'operating' status are the minority and most of startups would want to reach the goal of being acquired or going public. Thus, we defined aquired and ipo as indicators of success.
 
 
 
