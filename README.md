@@ -46,9 +46,8 @@ After some extensive searches through Kaggle, we settled on Startup Investments 
 
 With machine learning techniques we would want to know:
  - What attributes lead to a startup success?
-With analysis and visualization we would like to find out:
- - What does it take to be successful? Any correlation with:
-    - How much time
+With analysis and visualization we would like to find out what does it take to be successful? Are there any correlations with:
+    - Age of Startup
     - Education level
     - Location
     - Market segment
@@ -56,16 +55,17 @@ With analysis and visualization we would like to find out:
     - Funding rounds
     - Investments vs Valuation
 Our dataset has four statuses:
- - Acquired
- - Operating
- - IPO
- - Closed
-Our target (success) - acquired + ipo. We think that it is the most desirable outcome for startups though we also know that operating companies can be equaly successful but not willing to go public or to be acquired. We belive that they are minority and most of startups would want to reach that point. Thus we defined aquired and ipo as indicators of success.
+    - Acquired
+    - Operating
+    - IPO
+    - Closed
+Our target (success) - acquired + IPO: 
+  We think that it is the most desirable outcome for startups though we also know that operating companies can be equaly successful but not willing to go public or to be acquired. We belive that they are minority and most of startups would want to reach that point. Thus we defined aquired and ipo as indicators of success.
 
-We ploted all US startups on a map:
+
 
 ![StartUps map](images/Capture_3.PNG)
-
+Fig. 1: US startups via map.
 
 #### Visualizations 
 
@@ -137,9 +137,13 @@ It is important to note that multiple different ML models were used before we de
 Machine Learning works like the human brain, just faster. It is quite hard for experts to determine which one is successful. That's why we were unable to produce results with higher accuracy and precision level more than 28%. 
 
 ![Geographic Predictions of Success](images/Capture1.PNG)
-![Market Segments Predictions of Success](images/market.PNG)
-![Life Span Predictions of Success](images/lifespan.PNG)
+Fig. 2: Geographic Predictions of Success
 
+![Market Segments Predictions of Success](images/market.PNG)
+Fig. 3: Market Segments Predictions of Success
+
+![Life Span Predictions of Success](images/lifespan.PNG)
+Fig. 4: Life Span Predictions of Success
 
 Moreover, there is a chance that Logistic Regression is outperforming due to its simplicity and it is prone to overfitting in high dimensional datasets.
 
