@@ -63,7 +63,10 @@ Our dataset has four statuses:
 Our target (success) - acquired + ipo. We think that it is the most desirable outcome for startups though we also know that operating companies can be equaly successful but not willing to go public or to be acquired. We belive that they are minority and most of startups would want to reach that point. Thus we defined aquired and ipo as indicators of success.
 
 We ploted all US startups on a map:
-![StartUps Map](Capture_3.png)
+<img src="Capture_3.png"
+     alt="StartUps Map"
+     style="float: left; margin-right: 10px;" />
+
 
 #### Visualizations 
 
