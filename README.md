@@ -44,9 +44,8 @@ After some extensive searches through Kaggle, we settled on Startup Investments 
 
 #### Questions We Hope to Answer
 
-With machine learning techniques we would want to know:
- - What attributes lead to a startup success?
-With analysis and visualization we would like to find out what does it take to be successful? Are there any correlations with:
+With machine learning techniques we would want to know what attributes lead to a startup success?
+Are there any correlations with:
     - Age of Startup
     - Education level
     - Location
@@ -54,13 +53,14 @@ With analysis and visualization we would like to find out what does it take to b
     - Start year
     - Funding rounds
     - Investments vs Valuation
-Our dataset has four statuses:
+Our dataset has four statuses/outcomes:
     - Acquired
     - Operating
     - IPO
     - Closed
-Our target (success) - acquired + IPO: 
-  We think that it is the most desirable outcome for startups though we also know that operating companies can be equaly successful but not willing to go public or to be acquired. We belive that they are minority and most of startups would want to reach that point. Thus we defined aquired and ipo as indicators of success.
+
+##### Defining Success
+Of our outcomes, we believe the most desirable outcome for startups are 'acquired' and 'IPO', however we also know that operating companies can be equaly successful but not willing to go public or to be acquired. We believe that the successful companies with the 'operating' status are the minority and most of startups would want to reach the goal of being acquired or going public. Thus, we defined aquired and ipo as indicators of success.
 
 
 
@@ -91,7 +91,7 @@ Fig. 1: US startups map
 
 We verified primary keys across all tables to establish a baseline form of consistency within the data and to allow joining of tables/dataframes in SQL/Python respectively.
  
-After distinguishing all objects we preprocessed and transformed each of them. We collected start and end dates from multiple objects and tables, calculated life span, worked on funding rounds and types and a number of participants, employees degrees (C-level employee), cleaned locations and placed them in regions buckets and so on. As a result of this transformation we have a few clean tables that we merged one by one. 
+After distinguishing all objects, we preprocessed and transformed each of them. We collected start and end dates from multiple objects and tables, calculated life span, aggregated funding rounds, funding types, number of funding participants, education levels of C-level employees, cleaned locations and placed them in regions, and more. As a result of this transformation, we have a few clean tables that we merged one by one. 
 
 Due to various inconsistencies within the data, we narrowed our scope to US startups with an inception date of no earlier than 01-01-2000. Binning was used for US regions based off of company locations and the lifespan of each company.
 
@@ -129,9 +129,6 @@ It is important to note that multiple different ML models were used before we de
 
 
 **Benefits:** Simplified, memory efficient, 91% accuracy, 28% precision 
-
-
-
 
 **Results and Conclusion:** We came to the conclusion that our dataset is not suitable for Machine Learning prediction. 
 Machine Learning works like the human brain, just faster. It is quite hard for experts to determine which one is successful. That's why we were unable to produce results with higher accuracy and precision level more than 28%. 
