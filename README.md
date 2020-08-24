@@ -65,7 +65,7 @@ Our target (success) - acquired + IPO:
 
 
 ![StartUps map](images/Capture_3.PNG)
-Fig. 1: US startups via map.
+Fig. 1: US startups map
 
 #### Visualizations 
 
