@@ -135,8 +135,11 @@ It is important to note that multiple different ML models were used before we de
 
 **Results and Conclusion:** We came to the conclusion that our dataset is not suitable for Machine Learning prediction. 
 Machine Learning works like the human brain, just faster. It is quite hard for experts to determine which one is successful. That's why we were unable to produce results with higher accuracy and precision level more than 28%. 
-Moreover, there is a chance that Logistic Regression is outperforming due to its simplicity. And it is prone to overfitting in high dimensional datasets.
 
+![Geographic Predictions of Success](images/Capture1.PNG)
+![Market Segments Predictions of Success](images/market.PNG)
+![Life Span Predictions of Success](images/lifespan.PNG)
+Moreover, there is a chance that Logistic Regression is outperforming due to its simplicity. And it is prone to overfitting in high dimensional datasets.
 
 Some things we can look into if we were to further our investigation include what type of product was in demand and why. For example, why is there a greater success rate in startups that focus on software as opposed to startups that focus on the news or hardware. Were there any economic events, such as the dotcom bubble or the recession of 08-09 that impacted the companies? And finally, some things that can not be quantified by machine learning that definitely influence the success of a company are the people. We have information on the C-level employees but who else on the team was a driving force for the startup? Who was great at networking or was a veteran to the startup world and knew how to work the market in their favor? Until there is a way to catergorize or encode these softskills, it will be difficult to predict the success of a startup via Machine Learning. 
 
